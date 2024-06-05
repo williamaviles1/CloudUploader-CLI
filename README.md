@@ -1,50 +1,36 @@
 <h1>Cloud Uploader CLI</h1>
 
 
-<h2>Introduction</h2>
-Hi! Welcome to my project. This project comes from the [Learn to Cloud Guide](https://learntocloud.guide/phase1/#capstone-project-clouduploader-cli), a structured and carefully put together guide on building skills suited for cloud engineering. I really enjoyed the process of this project because not only did it deal with AWS but it was also through powershell which I have been excited to work in. As I continue my career I have been curious to learn new things and advance my career as an IT professional. Down below I’ll guide you through the project for you to follow along.
-<br />
+## Introduction
+
+Hi! Welcome to my project. This project comes from the [Learn to Cloud Guide](https://learntocloud.guide/phase1/#capstone-project-clouduploader-cli), a structured and carefully put together guide on building skills suited for cloud engineering. I really enjoyed the process of this project because not only did it deal with AWS but it was also through PowerShell, which I have been excited to work in. As I continue my career, I have been curious to learn new things and advance my career as an IT professional. Down below I’ll guide you through the project for you to follow along.
+
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>PowerShell: Primary scripting language used to create the CLI tool.</b> 
+- <b>AWS CLI: Used to interact with AWS S3 for file uploads.</b>
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Windows 10</b> (22H2)
 
-<h2>Program walk-through:</h2>
+## Project Overview
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+Initially, this project was intended to be run through the bash CLI but I was more interested in creating it as a powershell script. The powershell script will upload a file(s) to a cloud storage from the CLI. Since I am familiar with AWS services and want to gain scripting experience, it seemed like a great idea to bridge both technologies to further enhance my learning.
+
+### Step 1: Setting up AWS
+Before jumping into building the script, start by setting up the AWS services needed for the script to function properly. Below you’ll find the services used:
+Service
+
+|Service    |Description    |
+|:----------|:----------|
+|IAM|Identity and Access Management – helps securely control access to AWS resources by managing users, groups, and permissions|
+|S3|Simple Storage Solution – scalable storage that lets you store and retrieve data from the web |
+
+
+
 
 <!--
  ```diff
